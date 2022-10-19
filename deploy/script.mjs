@@ -5,7 +5,7 @@ import fs from "node:fs";
   try {
     // branch setting
     const targetBranch = 'build';
-    const mainBranch = 'main'; // master / main
+    const mainBranch = 'master'; // master / main
     // init targetBranch
     await execa("git", ["checkout", "--orphan", targetBranch]);
     // eslint-disable-next-line no-console
